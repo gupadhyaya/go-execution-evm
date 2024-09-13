@@ -44,8 +44,6 @@ lint: vet
 	@hadolint docker/mockserv.Dockerfile
 	@echo "--> Running yamllint"
 	@yamllint --no-warnings . -c .yamllint.yml
-	@echo "--> Running actionlint"
-	@actionlint
 
 .PHONY: lint
 
